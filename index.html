@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- رنگ نوار بالای مرورگر موبایل -->
+    <meta name="theme-color" content="#41B392">
+    <meta name="msapplication-navbutton-color" content="#41B392">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>روادید الکترونیکی</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+
+        <div class="site-title">
+            روادید الکترونیکی
+        </div>
+
+        <button class="menu-button" id="menuButton" aria-label="منو">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#">صفحه اصلی</a>
+    <a href="download.pdf" target="_blank">سامانه روادید الکترونیکی</a>
+    <a href="insurance.pdf" target="_blank">بیمه‌نامه</a>
+</div>
+
+<main class="page">
+
+    <section class="status-header">
+        <img src="map-transparent.png" class="world-map" alt="">
+        <div class="status-title">بررسی وضعیت درخواست</div>
+    </section>
+
+    <section class="info-table">
+
+        <div class="info-row gray row-track">
+            <div class="label">کد<br>رهگیری</div>
+            <div class="value ltr">WL89W0DFLL554848I5</div>
+        </div>
+
+        <div class="info-row white row-passport">
+            <div class="label">شماره<br>گذرنامه</div>
+            <div class="value ltr">P09304469</div>
+        </div>
+
+        <div class="info-row gray row-nationality">
+            <div class="label">ملیت</div>
+            <div class="value">افغانستان</div>
+        </div>
+
+        <div class="info-row white row-date">
+            <div class="label">تاریخ ثبت<br>درخواست</div>
+            <div class="value date-value ltr">
+                <span>2026/7/30</span>
+                <span>(1405/05/08)</span>
+            </div>
+        </div>
+
+        <div class="info-row gray row-status">
+            <div class="label">بررسی<br>وضعیت<br>درخواست:</div>
+            <div class="value issued">صادر شده</div>
+        </div>
+
+        <div class="info-row white row-small">
+            <div class="label">اعتبار از:</div>
+            <div class="value date-value ltr">
+                <span>2026/7/30</span>
+                <span>(1405/05/8)</span>
+            </div>
+        </div>
+
+        <div class="info-row gray row-small">
+            <div class="label">اعتبار تا:</div>
+            <div class="value date-value ltr">
+                <span>2026/9/12</span>
+                <span>(1405/06/21)</span>
+            </div>
+        </div>
+
+        <div class="info-row white row-duration">
+            <div class="label">مدت<br>روادید:</div>
+            <div class="value">30 روز</div>
+        </div>
+
+        <div class="info-row gray row-insurance">
+            <div class="label">شماره<br>بیمه‌نامه:</div>
+            <div class="value insurance-number ltr">1405/151/113/4528/117586</div>
+        </div>
+
+    </section>
+
+    <a href="downlod2.pdf" target="_blank" class="visa-button">
+    سامانه روادید الکترونیکی
+</a>
+
+    <a class="insurance-action" href="insurance.pdf" target="_blank">
+        <span>بیمه‌نامه</span>
+        <span class="printer">▣</span>
+    </a>
+
+</main>
+
+<script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+    });
+</script>
+
+</body>
+</html>
